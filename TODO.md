@@ -2,7 +2,7 @@
 
 ## Phase 1: Core Functionality
 - [x] Integrate Commerce screen into navigation
-- [ ] Replace placeholder text with meaningful content in all screens
+- [x] Replace placeholder text with meaningful content in all screens
 - [ ] Add state management for cart functionality
 - [ ] Create basic cart context
 - [ ] Update Commerce screen with add-to-cart functionality

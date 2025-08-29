@@ -6,37 +6,40 @@ import OnlineShop from './src/screens/onlineShop';
 import Cart from './src/screens/Cart';
 import Payment from './src/screens/payment';
 import Commerce from './src/screens/Commerce';
+import { CartProvider } from './src/context/CartContext';
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen 
-          options={{
-            title: 'Azey Shop'
-          }}
-          name='OnlineShop' 
-          component={OnlineShop}
-        />
-        <Stack.Screen 
-          name='Commerce' 
-          component={Commerce}
-          options={{ title: 'Products' }}
-        />
-        <Stack.Screen 
-          name='Cart' 
-          component={Cart}
-          options={{ title: 'Shopping Cart' }}
-        />
-        <Stack.Screen 
-          name='Payment' 
-          component={Payment}
-          options={{ title: 'Payment' }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <CartProvider>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen 
+            options={{
+              title: 'Azey Shop'
+            }}
+            name='OnlineShop' 
+            component={OnlineShop}
+          />
+          <Stack.Screen 
+            name='Commerce' 
+            component={Commerce}
+            options={{ title: 'Products' }}
+          />
+          <Stack.Screen 
+            name='Cart' 
+            component={Cart}
+            options={{ title: 'Shopping Cart' }}
+          />
+          <Stack.Screen 
+            name='Payment' 
+            component={Payment}
+            options={{ title: 'Payment' }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </CartProvider>
   );
 }
 

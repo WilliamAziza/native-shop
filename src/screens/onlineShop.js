@@ -7,7 +7,9 @@ const OnlineShop = ({navigation}) => {
         <View style={styles.container}>
             <Text style={styles.shopHeader} >ONLINE SHOPPING</Text>
             <Text style={styles.LoremText} >
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                Welcome to Azey Shop! Discover the latest fashion trends and high-quality clothing. 
+                Browse our collection of stylish jackets, hoodies, and accessories. 
+                Start shopping now to find your perfect style at amazing prices.
             </Text>
             <Image source={shop} style={styles.images}/>
             <TouchableOpacity onPress={()=>{

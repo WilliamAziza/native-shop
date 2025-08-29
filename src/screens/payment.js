@@ -8,7 +8,9 @@ const Payment = () => {
         <View style={styles.container}>
             <Text style={styles.payHeader}>PAYMENT SUCCESSFUL</Text>
             <Text style={styles.payText}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                Thank you for your purchase! Your payment has been processed successfully. 
+                You will receive an email confirmation shortly. 
+                We appreciate your business and hope to see you again soon.
             </Text>
             <Image source={payment} />
             <TouchableOpacity style={styles.button}>
