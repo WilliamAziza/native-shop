@@ -6,6 +6,7 @@ import OnlineShop from './src/screens/onlineShop';
 import Cart from './src/screens/Cart';
 import Payment from './src/screens/payment';
 import Commerce from './src/screens/Commerce';
+import ProductDetail from './src/screens/ProductDetail';
 import { CartProvider } from './src/context/CartContext';
 
 const Stack = createStackNavigator();
@@ -26,6 +27,11 @@ export default function App() {
             name='Commerce' 
             component={Commerce}
             options={{ title: 'Products' }}
+          />
+          <Stack.Screen 
+            name='ProductDetail' 
+            component={ProductDetail}
+            options={{ title: 'Product Details' }}
           />
           <Stack.Screen 
             name='Cart' 

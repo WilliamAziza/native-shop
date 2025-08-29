@@ -99,6 +99,13 @@ const Commerce = ({ navigation }) => {
               >
                 <Text style={styles.addToCartText}>Add to Cart</Text>
               </TouchableOpacity>
+              
+              <TouchableOpacity 
+                style={styles.viewDetailsButton}
+                onPress={() => navigation.navigate('ProductDetail', { product })}
+              >
+                <Text style={styles.viewDetailsText}>View Details</Text>
+              </TouchableOpacity>
             </View>
           </View>
         ))}
