@@ -20,7 +20,11 @@
     "react-native-screens": "~3.31.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "metro": "^0.83.1",
+    "metro-config": "^0.83.1",
+    "metro-core": "^0.83.1",
+    "metro-react-native-babel-preset": "^0.77.0"
   },
   "private": true
 }
